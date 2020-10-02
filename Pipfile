@@ -14,7 +14,10 @@ pytest-runner = "*"
 PyInstaller = "*"
 Sphinx = "*"
 twine = "*"
+isort = "*"
+pytest-cov = "*"
 
 [packages]
 predicting_credit_card_approvals = {path = ".", editable = true}
 click = "*"
+ipykernel = "*"

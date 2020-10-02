@@ -4,11 +4,9 @@
 """Tests for `predicting_credit_card_approvals` package."""
 
 import pytest
-
 from click.testing import CliRunner
 
-from predicting_credit_card_approvals import predicting_credit_card_approvals
-from predicting_credit_card_approvals import cli
+from predicting_credit_card_approvals import cli, predicting_credit_card_approvals
 
 
 @pytest.fixture
@@ -32,7 +30,7 @@ def test_command_line_interface():
     runner = CliRunner()
     result = runner.invoke(cli.main)
     assert result.exit_code == 0
-    assert 'predicting_credit_card_approvals.cli.main' in result.output
-    help_result = runner.invoke(cli.main, ['--help'])
+    assert "predicting_credit_card_approvals.cli.main" in result.output
+    help_result = runner.invoke(cli.main, ["--help"])
     assert help_result.exit_code == 0
-    assert '--help  Show this message and exit.' in help_result.output
+    assert "--help  Show this message and exit." in help_result.output
