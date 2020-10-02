@@ -223,4 +223,13 @@ fabric.properties
 # Ignore all local history of files
 .history
 
+# Things specific to this project #
+###################################
+/.anaconda
+/.envs
+/record.txt
+/docs/build
+*.orig
+CHANGELOG.temp
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,pycharm

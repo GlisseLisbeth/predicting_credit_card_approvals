@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/root/.local/share/virtualenvs/predicting_credit_card_approvals-e75YJNyZ/bin/python"
+    "python.pythonPath": "/root/.local/share/virtualenvs/predicting_credit_card_approvals-e75YJNyZ/bin/python",
+    "python.dataScience.jupyterServerURI": "local",
+    "discord.enabled": true
 }
